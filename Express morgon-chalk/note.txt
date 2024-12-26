@@ -1,0 +1,79 @@
+USER APIs::->
+
+API-1
+URL : http://127.0.0.1:8080/
+Method:GET
+Required Fields:None 
+Access Type:Public 
+
+API-2
+URL : http://127.0.0.1:8080/user/
+Method:GET
+Required Fields:None 
+Access Type:Public 
+
+
+API-3
+URL : http://127.0.0.1:8080/user/create/
+Method:POST
+Required Fields:None 
+Access Type:Public 
+
+API-4
+URL : http://127.0.0.1:8080/user/del 
+Method:DELETE
+Required Fields:None 
+Access Type:Public
+
+API-5
+URL : http://127.0.0.1:8080/user/all
+Method:GET
+Required Fields:None 
+Access Type:Public 
+
+========================
+
+PRODUCT APIs
+
+API-6
+URL : http://127.0.0.1:8080/prod/ 
+Method:GET
+Required Fields:None 
+Access Type:Public 
+
+
+API-7
+URL : http://127.0.0.1:8080/prod/create 
+Method:POST
+Required Fields:None 
+Access Type:Public 
+
+API-8
+URL : http://127.0.0.1:8080/prod/remove
+Method:DELETE
+Required Fields:None 
+Access Type:Public
+
+
+
+
+
+
+Step By Step Routing api creation:
+1. npm init -y for package.json then make changes like "type":"module" and start:"nodemon app.js"
+2. create app.js comp and install npm i express and install dotenv(for routing) npm i dotenv
+3. create a Config folder and create a .env file and add PORT=8080 and HOSTNAME: 127.0.0.1
+4. create a models(Routes) folder and create a userRouter.js file and add user schema
+5. create a models(Routes) folder and create a productRouter.js file and add user schema
+
+==> When multiple apis are to be created for different pages -- products, user, about, contact etc like /products/create, products/update, products/delete
+        keeping codes in different files always advisable.. for that we need routing
+
+In app.js file ==> 
+import express
+import dotenv
+configure dotenv folder path
+create a variable for port and HOSTNAME
+create app.get() for root request
+create app.use and add path and router components
+then create app.listen to listen to the server and add port and host variables 

@@ -1,0 +1,27 @@
+npm init -y
+npm i express
+
+API Info
+====================================
+API URL - http://127.0.0.1:8080/
+Method Type: GET
+Required fields: None
+Access Type: Public
+
+API URL:http://127.0.0.1:8080/create
+Method Type:POST
+Required Fields:None
+Access Type:Public
+
+
+
+API URL:http://127.0.0.1:8080/update
+Method Type:PUT
+Required Fields:None
+Access Type:Public
+
+
+API URL:http://127.0.0.1:8080/delete
+Method Type:DELETE
+Required Fields:None
+Access Type: Public
